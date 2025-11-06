@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" lang="en">
+  <title>Enter your gender and birthday</title>
+  <link rel="icon" href="images/Google_icon-icons.com_56578.ico">
+  <link rel="stylesheet" href="css/style2.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <script>
+    function checkDateForm(event) {
+      var form = document.getElementById("date_form");
+      if (!form.reportValidity()) {
+        return;
+      }
+      swal.fire({
+        icon: "success",
+        title: "Success",
+        text: "you have entered your gender and birthday correctly"
+        }).then(() => {
+        form.submit(); // submita ko user klikne "ok"
+        window.location.href = 'email.html';
+      });
+    }
+  </script>
+
+  <div id="megadiv">
+    <div id="main">
+      <div id="instructions">
+        <div id="left">
+          <div id="get_instructed">
+            <img src="images/google_icon-icons.com_62736.svg" width="48" height="48">
+            <h1>Basic information</h1>
+            <p>Enter your birthday and gender</p>
+          </div>
+        </div>
+        <div id="right">
+          <div id="date_form_div">
+            <form method="get" id="date_form">
+              <div id="date">
+                <div class="inputs">
+                  <select class="datum" name="month" value="month" def>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                </div>
+                <div class="inputs">
+                  <input type="text" class="datum" min="1" max="31" placeholder="day" required>
+                </div>
+                <div class="inputs">
+                  <input type="text" class="datum" min="0" max="9999" placeholder="year" required>
+                </div>
+              </div>
+              <div id="gender">
+                <select class="datum" name="month" value="month" def>
+                  <option value="MA">Male</option>
+                  <option value="FE">Female</option>
+                  <option value="RNS">Rather not say</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div id="bottom_right">
+            <button id="next_button" onclick="checkDateForm()">Next</button>
+          </div>
+        </div>
+
+      </div>
+      <div id="undermenu">
+        <div id="language">
+          <select id="lang_button" name="language">
+            <option value="English (United States)">English (United States)</option>
+            <option value="English (United Kingdom)">English (United Kingdom)</option>
+          </select>
+        </div>
+
+        <div id="under_container">
+          <a href="https://support.google.com/accounts?hl=en&p=account_iph" target="_blank">Help</a>
+          <a href="https://accounts.google.com/TOS?loc=SI&hl=en&privacy=true" target="_blank">Privacy</a>
+          <a href="https://accounts.google.com/TOS?loc=SI&hl=en" target="_blank">Terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
