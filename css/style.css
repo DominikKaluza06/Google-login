@@ -62,6 +62,29 @@ input[type="text"]{
   height: 384px;
   border-radius: 35px;
 }
+#middle{
+  height: 60%;
+}
+#register{
+  height: 50%;
+  width: 100%;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+}
+#login, #registarcija{
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+#centering{
+  align-items: center;
+  justify-content: center;
+  
+}
+#registracija{
+  margin: auto;
+}
+
 
 #left{
   height: 100%;
@@ -88,7 +111,7 @@ input[type="text"]{
   align-items: center;
   justify-content: center;
 }
-#date_form_div_blblbl{
+#date_form_div{
   width: 75%;
 }
 #name_form_div {
@@ -151,33 +174,55 @@ input[type="text"]{
   background-color: #2b2b2b;
 }
 #date{
-  display: flex;
+  width: 80%;
   height: 48px;
+  padding: 12px 14px;
 }
-.datum{
-  width: 100%;
+option {
+  background-color: #111;
+  color: white;
+  
+}
+.date-input input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#gender{
+  width: 80%;
   color: #e3e3e3;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #8e918f;
+  border: 0px solid #8e918f;
   font-family: sans-serif;
   font-size: 16px;
   padding: 12px 14px;
 }
-.inputs{
-  margin: 0 10px;
-  width: 34%;
-  height: 100%;
+#datum{
+  width: 90%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 3px;
 }
-.inputs input[type=text]{
-  width: 70%;
-  height: auto;
-  margin: 0;
+#spol{
+  width: 100%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 3px;
 }
+
 
 input[type="email"]{
   width: 90%;
   color: #e3e3e3;
+  border-width: 0px ;
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid #8e918f;

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" lang="en">
-  <title>Enter your gender and birthday</title>
+  <title>Create your Google Account</title>
   <link rel="icon" href="images/Google_icon-icons.com_56578.ico">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -10,19 +10,18 @@
 </head>
 <body>
   <script>
-
-    function checkDateForm(event) {
-      var form = document.getElementById("date_form");
+    function checkNameForm(event) {
+      var form = document.getElementById("name_form");
       if (!form.reportValidity()) {
         return;
       }
       swal.fire({
         icon: "success",
         title: "Success",
-        text: "you have entered your gender and birthday correctly"
+        text: "you have entered your name"
         }).then(() => {
         form.submit(); // submita ko user klikne "ok"
-        window.location.href = 'email.html';
+        window.location.href = 'gender_and_birthday.html';
       });
     }
   </script>
@@ -33,27 +32,19 @@
         <div id="left">
           <div id="get_instructed">
             <img src="images/google_icon-icons.com_62736.svg" width="48" height="48">
-            <h1>Basic information</h1>
-            <p>Enter your birthday and gender</p>
+            <h1>Create a Google Account</h1>
+            <p>Enter your name</p>
           </div>
         </div>
         <div id="right">
-          <div id="date_form_div">
-            <form method="get" id="date_form">
-              <div id="date">              
-                <input type="date" id="datum" min="1900-01-01" max="2010-01-01" required>        
-              </div>
-              <div id="gender">
-                <select id="spol" name="month" value="month" required>
-                  <option value="MA">Male</option>
-                  <option value="FE">Female</option>
-                  <option value="RNS">Rather not say</option>
-                </select>
-              </div>
+          <div id="name_form_div">
+            <form method="get" id="name_form">
+              <input type="text" name="first_name" placeholder="First name" required>
+              <input type="text" name="last_name" placeholder="Last name (optional)">
             </form>
           </div>
           <div id="bottom_right">
-            <button id="next_button" onclick="checkDateForm()">Next</button>
+            <button id="next_button" onclick="checkNameForm()">Next</button>
           </div>
         </div>
 
