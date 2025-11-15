@@ -66,19 +66,13 @@ input[type="text"]{
 #middle{
   height: 60%;
 }
-#register{
-  height: 30%;
+#register, #login{
+  height: 40%;
   width: 100%;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically */
+  justify-content: center;
+  align-items: center; 
 }
-#login{
-  height: 30%;
-  width: 100%;
-  display: flex;
-  background-color: #a8czfa;
-  color: #a8czfa;
-}
+
 #centering{
   align-items: center;
   justify-content: center;
@@ -86,26 +80,29 @@ input[type="text"]{
   height: 100%;
   width: 100%;
 }
-#registracija{
-  height: 40%;
-  width: 20%;
-  background-color: #a8c7fa;
-  border-radius: 6px;
-  border: 0px;
-  font-family: sans-serif;
-}
 
-#prijava{
-  height: 40%;
+#registracija, #prijava {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 0px;
-  width: 20%;
+  width: 30%;
   background-color: #a8c7fa;
   margin: auto;
-  text-align: center;
   font-family: sans-serif;
   border-radius: 6px;
+  font-size: 1.5em; /* scales with parent font */
+  padding: 0.5em 1em;
+} 
+#registracija:hover {
+  background-color: #bed1f3; /* new color when hovering */
+  cursor: pointer;           /* changes cursor to pointer */
 }
 
+#prijava:hover {
+  background-color: #bdceec; /* new color on hover */
+  cursor: pointer;
+}
 
 #left{
   height: 100%;
