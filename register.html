@@ -6,32 +6,17 @@
   <link rel="icon" href="images/Google_icon-icons.com_56578.ico">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="javascript/functions.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <script>
-    function checkNameForm(event) {
-      var form = document.getElementById("name_form");
-      if (!form.reportValidity()) {
-        return;
-      }
-      swal.fire({
-        icon: "success",
-        title: "Success",
-        text: "you have entered your name"
-        }).then(() => {
-        form.submit(); // submita ko user klikne "ok"
-        window.location.href = 'gender_and_birthday.html';
-      });
-    }
-  </script>
 
   <div id="megadiv">
     <div id="main">
       <div id="instructions">
         <div id="left">
           <div id="get_instructed">
-            <img src="images/google_icon-icons.com_62736.svg" width="48" height="48">
+            <img src="images/google_icon-icons.com_62736.svg" onclick="piskot()" alt="Google" width="48" height="48">
             <h1>Create a Google Account</h1>
             <p>Enter your name</p>
           </div>
@@ -39,7 +24,7 @@
         <div id="right">
           <div id="name_form_div">
             <form method="get" id="name_form">
-              <input type="text" name="first_name" placeholder="First name" required>
+              <input type="text" name="first_name" minlength="3" placeholder="First name" required>
               <input type="text" name="last_name" placeholder="Last name (optional)">
             </form>
           </div>

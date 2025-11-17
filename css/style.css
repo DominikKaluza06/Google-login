@@ -201,10 +201,6 @@ option {
   color: white;
   
 }
-.date-input input::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  pointer-events: none;
-}
 
 #gender{
   width: 80%;
@@ -234,6 +230,9 @@ option {
   font-size: 16px;
   padding: 12px 14px;
   border-radius: 3px;
+}
+input{
+  color-scheme: dark;
 }
 
 

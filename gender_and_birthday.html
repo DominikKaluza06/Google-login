@@ -6,33 +6,18 @@
   <link rel="icon" href="images/Google_icon-icons.com_56578.ico">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="javascript/functions.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <script>
 
-    function checkDateForm(event) {
-      var form = document.getElementById("date_form");
-      if (!form.reportValidity()) {
-        return;
-      }
-      swal.fire({
-        icon: "success",
-        title: "Success",
-        text: "you have entered your gender and birthday correctly"
-        }).then(() => {
-        form.submit(); // submita ko user klikne "ok"
-        window.location.href = 'email.html';
-      });
-    }
-  </script>
 
   <div id="megadiv">
     <div id="main">
       <div id="instructions">
         <div id="left">
           <div id="get_instructed">
-            <img src="images/google_icon-icons.com_62736.svg" width="48" height="48">
+            <img src="images/google_icon-icons.com_62736.svg" onclick="piskot()" alt="Google" width="48" height="48">
             <h1>Basic information</h1>
             <p>Enter your birthday and gender</p>
           </div>
