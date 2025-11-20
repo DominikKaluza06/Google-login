@@ -1,0 +1,352 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1f20;
+  font-family: sans-serif;
+}
+h1{
+  color: #e3e3e3;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+}
+p{
+  color: #e3e3e3;
+  font-family: sans-serif;
+}
+a{
+  border-radius: 10px;
+  color: #e3e3e3;
+  font-family: sans-serif;
+  font-size: 13px;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+a:hover{
+  background-color: #2b2b2b;
+}
+input[type="text"]{
+  width: 90%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 28px;
+  margin: 15px 0;
+  padding: 12px 14px;
+}
+::placeholder{
+  color: #aeaeae;
+}
+
+#megadiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  margin: auto;
+}
+#instructions{
+  margin: auto;
+  background-color: #0e0e0e;
+  width: 1040px;
+  height: 384px;
+  border-radius: 35px;
+}
+#middle{
+  height: 60%;
+}
+#register, #login{
+  height: 40%;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+
+#centering{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#registracija, #prijava {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  width: 30%;
+  background-color: #a8c7fa;
+  margin: auto;
+  font-family: sans-serif;
+  border-radius: 6px;
+  font-size: 1.5em; /* scales with parent font */
+  padding: 0.5em 1em;
+} 
+#registracija:hover {
+  background-color: #bed1f3; /* new color when hovering */
+  cursor: pointer;           /* changes cursor to pointer */
+}
+
+#prijava:hover {
+  background-color: #bdceec; /* new color on hover */ 
+  cursor: pointer;
+}
+
+#left{
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+#get_instructed{
+  padding: 40px;
+}
+#get_instructed h1{
+  padding-top: 20px;
+}
+#get_instructed p{
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+#right {
+  position: relative; /* nujno za absolute positioning */
+  height: 100%;
+  width: 50%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#date_form_div{
+  width: 75%;
+}
+#name_form_div {
+  padding: 40px;
+}
+#bottom_right {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+#next_button{
+  cursor: pointer;
+  font-weight: bold;
+  color: #062e6f;
+  height: 40px;
+  width: 75px;
+  background-color: #a8c7fa;
+  border-color: transparent;
+  border-radius: 100px;
+}
+
+/* celoten spodnji menu*/
+#undermenu{
+  margin: auto;
+  height: 64px;
+}
+#language{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  float: left;
+}
+#under_container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  float: right;
+}
+#under_container a{
+  padding: 8px 12px;
+}
+#lang_div{
+  box-shadow: 0 0 10px 0 #161616; /* 10px naredi senco blurred*/
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #303134;
+}
+#lang_button{
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #e3e3e3;
+  font-family: sans-serif;
+  font-size: 13px;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+#lang_button:hover{
+  cursor: pointer;
+  background-color: #2b2b2b;
+}
+#date{
+  width: 80%;
+  height: 48px;
+  padding: 12px 14px;
+}
+option {
+  background-color: #111;
+  color: white;
+  
+}
+
+#gender{
+  width: 80%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border: 0px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 12px 14px;
+}
+#datum{
+  width: 90%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 3px;
+}
+#spol{
+  width: 100%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 3px;
+}
+input{
+  color-scheme: dark;
+}
+
+
+input[type="email"]{
+  width: 90%;
+  color: #e3e3e3;
+  border-width: 0px ;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 28px;
+  margin: 15px 0;
+  padding: 12px 14px;
+}
+input[type="tel"]{
+  width: 90%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 28px;
+  margin: 15px 0;
+  padding: 12px 14px;
+}
+input[type="password"]{
+  width: 90%;
+  color: #e3e3e3;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #8e918f;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 28px;
+  margin: 15px 0;
+  padding: 12px 14px;
+}
+
+
+/* za responsive design */
+@media (max-width: 960px) {
+  body{
+    background-color: #0e0e0e;
+  }
+  #megadiv{
+    background-color: #0e0e0e;
+  }
+
+  #main{
+    width: 100%;
+    height: 100%;
+  }
+  #instructions{
+    width: 100%;
+  }
+}
+
+@media(max-width: 700px) {
+  #left{
+    float: left;
+    height: auto;
+    width: 100%;
+  }
+  #right{
+    float: left;
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+  #bottom_right{
+    margin-top: 20px;
+    position: inherit;
+    display: flex;
+    justify-content: right;
+  }
+  
+  #name_form_div{
+    padding: 20px 40px;
+  }
+  #prijava, #registracija {
+    width: 70%;
+  }
+  #undermenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #language, #under_container {
+    height: 50%;
+  }
+  #next_button{
+    margin-top: 55px;
+  }
+  #date_form_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #date_form{
+    width: 90%;
+  }
+  #date{
+    width: 80%;
+
+  }
+  #gender{
+    width: 82%;
+  }
+  #ger_instructed{
+    padding: 20px;
+  }
+}
