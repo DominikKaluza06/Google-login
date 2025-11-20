@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" lang="en">
-  <title>This is NOT Google</title>
+  <title>Login</title>
   <link rel="icon" href="images/Google_icon-icons.com_56578.ico">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -11,25 +11,28 @@
 </head>
 <body>
 
-
   <div id="megadiv">
     <div id="main">
       <div id="instructions">
+        <div id="left">
           <div id="get_instructed">
-            <img src="images/google_icon-icons.com_62736.svg" onclick="piskot()" alt="Google" width="48" height="48">
+            <div id="slikaaa" onclick="piskot()"></div>
+            <h1>Log in</h1>
+            <p>Use your Google account</p>
           </div>
-          <div id="middle">
-            <div id="register">
-                <div id="centering">
-					        <button id="registracija" onclick="window.location.href='register.html';">Registriraj se!</button>
-                </div>
-            </div>
-            <div id="login">
-                <div id="centering">
-                    <button id="prijava" onclick="window.location.href='login.html';">Prijavi se!</button>
-                </div>
-            </div>
+        </div>
+        <div id="right">
+          <div id="name_form_div">
+            <form method="get" id="password_form">
+              <input type="email" name="first_name" id="mail" placeholder="email" required>
+            </form>
           </div>
+          <div id="bottom_right">
+            <button id="create_account" onclick="letimletim()">create account</button>
+            <button id="next_button" onclick="checkLoginForm()">Next</button>
+          </div>
+        </div>
+
       </div>
       <div id="undermenu">
         <div id="language">
