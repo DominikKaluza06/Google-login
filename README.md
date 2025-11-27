@@ -1,6 +1,6 @@
 <h1> GOOGLE LOGIN FORM, NALOGA OBRAZEC</h1>
-Avtor: Dominik Kaluža
-Projekt: Google login obrazec, 1. projektna naloga - izdelava obrazca
+Avtor: Dominik Kaluža  <br>
+Projekt: Google login obrazec, 1. projektna naloga - izdelava obrazca <br>
 Uporabljeni jeziki: HTML, CSS, JavaScript.
 
 Začetna stran:
