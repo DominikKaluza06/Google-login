@@ -16,5 +16,5 @@ Odzivnost:
 Sweet alert:
 <img width="1103" height="459" alt="image" src="https://github.com/user-attachments/assets/2ff8c18c-49a2-498a-9d86-144a2a47dde5" />
 
-bonbonček:
+bonbonček: <br>
 <img width="564" height="356" alt="image" src="https://github.com/user-attachments/assets/6a01fc06-822b-495b-9f62-cab08a8534b9" />
