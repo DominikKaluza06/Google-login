@@ -141,7 +141,7 @@ function piskot(event){
         text: "you have created an account"
         }).then(() => {
         form.submit(); // submita ko user klikne "ok"
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
       });
     }
     function checkNameForm(event) {
@@ -162,3 +162,4 @@ function piskot(event){
       });
 
     }
+
