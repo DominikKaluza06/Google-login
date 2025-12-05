@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" lang="en">
+  <title>Create your Google Account</title>
+  <link rel="icon" href="images/Google_icon-icons.com_56578.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="javascript/functions.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div id="megadiv">
+    <div id="main">
+      <div id="instructions">
+        <div id="left">
+          <div id="get_instructed">
+            <div id="slikaaa" onclick="piskot()"></div>
+            <h1>Create a Google Account</h1>
+            <p>Enter your name</p>
+          </div>
+        </div>
+        <div id="right">
+          <div id="name_form_div">
+            <form method="get" id="name_form">
+              <input type="text" name="first_name" minlength="3" placeholder="First name" required>
+              <input type="text" name="last_name" placeholder="Last name (optional)">
+            </form>
+          </div>
+          <div id="bottom_right">
+            <input type="submit" id="next_button" onclick="checkNameForm()" value="next">
+          </div>
+        </div>
+
+      </div>
+      <div id="undermenu">
+        <div id="language">
+          <select id="lang_button" name="language">
+            <option value="English (United States)">English (United States)</option>
+            <option value="English (United Kingdom)">English (United Kingdom)</option>
+          </select>
+        </div>
+
+        <div id="under_container">
+          <a href="https://support.google.com/accounts?hl=en&p=account_iph" target="_blank">Help</a>
+          <a href="https://accounts.google.com/TOS?loc=SI&hl=en&privacy=true" target="_blank">Privacy</a>
+          <a href="https://accounts.google.com/TOS?loc=SI&hl=en" target="_blank">Terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
