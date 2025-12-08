@@ -163,3 +163,14 @@ function piskot(event){
 
     }
 
+  function showPassword(passwordID){
+    const password = document.getElementById(passwordID);
+
+    if(password.type === "password") {
+      password.type = "text";
+    }
+    else{
+      password.type = "password";
+    }
+  }
+
