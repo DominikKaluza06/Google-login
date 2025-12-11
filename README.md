@@ -36,6 +36,36 @@
 
 <hr>
 
+<h2>📁 Struktura datotek</h2>
+
+<p>
+  Struktura datotek v tem projektu je enostavna in pregledna. Tukaj je seznam glavnih datotek, ki jih boste našli v tem projektu:
+</p>
+
+<pre>
+Google-login/
+├── index.html              # Glavna HTML datoteka (prijavni obrazec)
+├── styles.css              # CSS za oblikovanje in odzivnost
+├── script.js               # JavaScript za interaktivnost in obvestila
+├── README.md               # Dokumentacija (ta datoteka)
+└── images/                 # Mapica za slike
+    ├── začetna-stran.png   # Prikaz začetne prijavne strani
+    ├── create-account.png  # Stran za ustvarjanje novega računa
+    ├── odzivnost.png       # Prikaz odzivnosti na različnih napravah
+    ├── sweet-alert.png     # Obvestila z uporabo SweetAlert knjižnice
+    └── bonbonček.png       # Dodatni vizualni element za izboljšanje UI
+</pre>
+
+<p> 
+  Vsaka datoteka ima jasno opredeljeno nalogo: 
+  - `index.html` vsebuje osnovno strukturo prijavnega obrazca.
+  - `styles.css` skrbi za vizualni dizajn in odzivnost.
+  - `script.js` vsebuje JavaScript funkcionalnosti, kot so validacija obrazca in SweetAlert obvestila.
+  - `images/` mapa vsebuje slike, ki se uporabljajo za prikaz različnih delov uporabniškega vmesnika, kot so začetna stran, "Create Account", odzivnost na mobilnih napravah in druge vizualne komponente.
+</p>
+
+<hr>
+
 <h2>📌 Začetna stran</h2>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fdd48ed7-6a64-4a41-90b8-c1df2381ec8d" width="600">
