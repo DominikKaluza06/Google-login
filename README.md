@@ -36,6 +36,6 @@ Uporabljeni jeziki: <strong>HTML, CSS, JavaScript</strong>
 
 <h2>Bonbonček:</h2>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6a01fc06-822b-495b-9f62-cab08a8534b9" width="600">
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/32885b4b-e098-478f-8fe1-4d19df5375af" />
 </p>
 
